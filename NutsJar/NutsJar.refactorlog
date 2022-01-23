@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="42e101be-3b64-4aae-9175-ddbab25eeb97" ChangeDateTime="01/23/2022 12:57:50">
+    <Property Name="ElementName" Value="[dbo].[FK_Scommessa_Utenti]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Scommesse]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Scommessa_Utenti_IdUtente]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fc66e144-7003-4de9-9e31-7582a223598a" ChangeDateTime="01/23/2022 13:01:00">
+    <Property Name="ElementName" Value="[dbo].[Giochi].[IdOperazioneGiocoVincente]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Giochi]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IdOpzioneGiocoVincente" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="360d7e93-3228-4e53-b7ae-2a2347deff57" ChangeDateTime="01/23/2022 13:01:24">
+    <Property Name="ElementName" Value="[dbo].[FK_Giochi_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Giochi]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Giochi_OpzioniGiochi_IdOpzioneGiocoVincente]" />
+  </Operation>
+</Operations>
